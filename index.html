@@ -1,77 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Student Management System</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Student Management System</title>
 </head>
+
 <body>
   <header>
     <nav>
       <div class="logo">
-          <img src="https://www.up.ac.th/en/images/logo.png" alt="Logo" height="72px">
+        <img src="https://www.up.ac.th/en/images/logo.png" alt="Logo" height="72px" onclick="GoHome()">
       </div>
       <ul class="navbar">
-          <li><a href="#">คู่มือ</a></li>
-          <li><a href="#">ติดต่อ</a></li>
-          <li class="dropdown">
-              <a href="#">ข้อความส่วนตัว</a>
-              <div class="dropdown-content">
-                  <a href="#">A link</a>
-                  <a href="#">B link</a>
-              </div>
-          </li>
-          <li style="margin-left: 46px;"><a href="#">การแจ้งเตือน</a></li>
-          <li class="dropdown">
-              <a href="#">บัญชีผู้ใช้</a>
-              <div class="dropdown-content">
-                  <button>ออกจากระบบ</button>
-              </div>
-          </li>
+        <li><a href="#">คู่มือ</a></li>
+        <li><a href="#">ติดต่อ</a></li>
+        <li class="dropdown">
+          <a href="#">ข้อความส่วนตัว</a>
+          <div class="dropdown-content">
+            <a href="#">A link</a>
+            <a href="#">B link</a>
+          </div>
+        </li>
+        <li style="margin-left: 46px;"><a href="#">การแจ้งเตือน</a></li>
+        <li class="dropdown">
+          <a href="#">บัญชีผู้ใช้</a>
+          <div class="dropdown-content">
+            <button>ออกจากระบบ</button>
+          </div>
+        </li>
       </ul>
-  </nav>
+    </nav>
   </header>
   <main>
-    <h1 id="title">Student Management System</h1>
+    <h1 style="text-align: center; user-select: none;">Student Management System</h1>
     <!-- Other content of your main section goes here -->
-    <div class="grid-container">
-      
+    <div class="container">
+
       <div class="card" onclick="openLink('https://example.com')">
         <div>
-          <img src="img/schedule.png" alt="Card Image">
+          <img src="img/table.png" alt="Card Image">
         </div>
         <div>
-          <p>Content A</p>
+          <p>ตารางเรียน</p>
         </div>
       </div>
 
       <div class="card" onclick="openLink('https://example.com')">
         <div>
-          <img src="img/schedule.png" alt="Card Image">
+          <img src="img/write.png" alt="Card Image">
         </div>
         <div>
-          <p>Content A</p>
+          <p>ลงทะเบียนเรียน</p>
         </div>
       </div>
 
       <div class="card" onclick="openLink('https://example.com')">
         <div>
-          <img src="img/schedule.png" alt="Card Image">
+          <img src="img/progressing.png" alt="Card Image">
         </div>
         <div>
-          <p>Content A</p>
+          <p>ประมวลผลการศึกษา</p>
         </div>
       </div>
 
-
-        
     </div>
 
-</main>
-    
-    <!-- Content of your website goes here -->
-    
-    <script src="script.js"></script>
+    <!--Another System-->
+    <div class="title">
+      <p>ระบบอื่นๆ</p>
+    </div>
+
+    <div id="grid-group1">
+      <div class="grid-container">
+
+        <div class="group">
+          <p>หลักสูตร</p>
+          <a href=""> ข้อมูลโคลงสร้างหลักสูตร</a>
+          <a href=""> ข้อมูลแผนการศึกษา</a>
+        </div>
+  
+        <div class="group">
+          <p>ด้านการเงิน</p>
+          <a href="">รายการค้างชำระ</a>
+          <a href="">ข้อมูลเงินกู้</a>
+        </div>
+  
+        <div class="group">
+          <p>ประเมิน</p>
+          <a href="">ประเมินอาจารย์<br>ที่ปรึกษา</a>
+          <a href="">ประเมินรายวิชาและ<br>อาจารย์ผู้สอน</a>
+        </div>
+      </div>
+  
+      <div class="grid-container">
+        <div class="group">
+          <p>คำร้อง</p>
+          <a href="">ยืนคำร้อง</a>
+          <a href="">ตรวจสอบคำร้อง/<br>พิมพ์เอกสาร</a>
+          <a href="">ดาวน์โหลดเอกสาร<br>ดิจิทัล</a>
+        </div>
+  
+        <div class="group">
+          <p>ทะเบียน</p>
+          <a href="">ระเบียนนิสิต</a>
+          <a href="">ค้นหาตารางสอน<br>ของอาจารย์</a>
+          <a href="">Course Syllabus</a>
+        </div>
+      </div>  
+    </div>
+ 
+
+  </main>
+
+  <!-- Content of your website goes here -->
+
+  <script src="script.js"></script>
 </body>
+
 </html>
