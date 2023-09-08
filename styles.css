@@ -1,0 +1,152 @@
+/* Add your styles here */
+:root {
+  --up-color: #7D5CBE;
+  --bg-color: #DADADA;
+}
+
+#title {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns for larger screens */
+  justify-content: center;
+  align-items: center;
+  /* Add other container styling here for larger screens */
+  margin: 0 36px 0 36px;
+}
+
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fff;
+  width: 350px;
+  height: 400px;
+  flex-shrink: 0;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+}
+
+.card > *:nth-child(1) {
+  flex-grow: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card > *:nth-child(2) {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #FFFFFF;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 1.12rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0 64px 0 0;
+  padding: 0;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--up-color);
+  min-width: 120px;
+  z-index: 1;
+}
+
+/* Style on hover */
+.dropdown-content :hover {
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  color: white;
+}
+
+/* Set box-sizing to border-box to include padding and borders in element's total width/height */
+.dropdown-content button {
+  width: 100%;
+  height: 100%;
+  padding: 10px; /* Add padding as needed */
+  background-color: #333; /* Button background color */
+  color: #FF0000; /* Button text color */
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box; /* Include padding and borders in the total width/height */
+  margin: 0; /* Remove any default margin */
+}
+
+/* Style for button on hover */
+.dropdown-content button:hover {
+  background-color: #FF0000; /* Change to your desired hover color */
+  color: white;
+}
+
+.dropdown-content a {
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change color of navbar links on hover */
+.navbar a:hover {
+  color: var(--up-color); /* Change to your desired hover color */
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: var(--up-color); /* Change to your desired hover color */
+  color: #FFFFFF; /* Change to your desired text color on hover */
+}
