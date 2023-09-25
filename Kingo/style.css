@@ -1,0 +1,393 @@
+@import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/arrow-left.css');
+/* navbar */
+/* ============================================================================================ */
+
+:root {
+    --up-color: #7D5CBE;
+    --up-color-dark: #433267;
+    --bg-color: #DADADA;
+}
+  
+nav {
+    font-family: 'Kanit', sans-serif;
+    position: fixed;
+    background-color: #FFFFFF;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1.12rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    width: 100%;
+}
+  
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0 64px 0 0;
+    padding: 0;
+}
+  
+.navbar li {
+    position: relative;
+}
+  
+.navbar a {
+    text-decoration: none;
+    color: #000;
+}
+  
+.dropdown {
+    position: relative;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--up-color);
+    min-width: 120px;
+    z-index: 1;
+}
+  
+  /* Style on hover */
+.dropdown-content :hover {
+    color: white;
+}
+  
+  /* Set box-sizing to border-box to include padding and borders in element's total width/height */
+.dropdown-content button {
+    width: 100%;
+    height: 100%;
+    padding: 10px; /* Add padding as needed */
+    background-color: #fff; /* Button background color */
+    color: #FF0000; /* Button text color */
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box; /* Include padding and borders in the total width/height */
+    margin: 0; /* Remove any default margin */
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--bg-color);
+}
+  
+  /* Style for button on hover */
+.dropdown-content button:hover {
+    background-color: #FF0000; /* Change to your desired hover color */
+    color: white;
+    font-weight: bold;
+}
+  
+.dropdown-content a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+  /* Change color of navbar links on hover */
+.navbar a:hover {
+    color: var(--up-color); /* Change to your desired hover color */
+}
+  
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: var(--up-color); /* Change to your desired hover color */
+    color: #FFFFFF; /* Change to your desired text color on hover */
+}
+/* ============================================================================================ */
+
+/* body */
+/* ============================================================================================ */
+
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    background-color: var(--bg-color);
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 5200px;
+}
+
+
+.box-container {
+    width: 98%;
+    height: 98%;
+    border-radius: 10px 10px 0px 0px;
+    border-left: 1px solid rgba(154, 153, 153, 0.78);
+    background-color: #EBF0F4;
+    margin-top: 110px;
+    margin-left: 14.99px;
+    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.17);
+}
+
+.nav-box {
+    width: 100%;
+    height: 29.782px;
+    border-radius: 10px 10px 0px 0px;
+    background: #7D5CBE;
+}
+
+.nav-box a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 5%;
+    height: 100%;
+    border-radius: 10px 0px 0px 0px;
+    background: #7D5CBE;
+    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    color: rgb(54, 54, 54);
+}
+
+.nav-box a:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 5%;
+    height: 100%;
+    border-radius: 10px 0px 0px 0px;
+    background: #54319b;
+    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    color: rgb(255, 255, 255);
+}
+
+.title-box{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: x-large;
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.info-student {
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #D9D9D9;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 4em;
+}
+
+.select-cstruc {
+    display: flex;
+    justify-content: center;
+}
+
+.label-select {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5em;
+}
+
+.l0 {
+    width: 1098px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: large;
+    font-weight: bold;
+}
+
+select {
+    width: 1098px;
+    height: 42px;
+    font-size: medium;
+    font-family: 'Kanit', sans-serif;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ic-print {
+    width: 45px;
+    height: 42px;
+    background: #0048ffb6;
+    border-radius: 10px;
+    margin-left: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ic-print:hover {
+    width: 45px;
+    height: 42px;
+    background: #00288fb6;
+    border-radius: 10px;
+    margin-left: 0.5em;
+    display: flex;
+    justify-content: center;
+    color: #D9D9D9;
+    align-items: center;
+}
+
+.test-eng {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background: #FFF;
+    width: 55%;
+}
+
+.label-ovall {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5em;
+    margin-top: 5em;
+    font-weight: bold;
+    font-size: large;
+}
+
+.ovall-info {
+    display: flex;
+    align-items: center; /* Use align-items instead of align-self */
+    flex-direction: column;
+    width: 100%;
+}
+
+.oi0 {
+    border-collapse: separate;
+    border-spacing: 0;
+    align-self: center;
+    width: 480px;
+    height: 38px;
+    border: 1px solid hsla(0, 0%, 36%, 1);
+    border-radius: 10px;
+    background-color: hsla(223, 100%, 50%, 0.15);
+    font-weight: 600;
+}
+
+.oi1 {
+    border-collapse: separate;
+    border-spacing: 0;
+    align-self: center;
+    width: 480px;
+    height: 38px;
+    border-top: 1px solid hsla(0, 0%, 36%, 1);
+    border-left: 1px solid hsla(0, 0%, 36%, 1);
+    border-right: 1px solid hsla(0, 0%, 36%, 1);
+    border-radius: 10px 10px 0px 0px;
+    background-color: hsla(223, 100%, 50%, 0.15);
+    font-weight: 600;
+}
+
+.oi2 {
+    border-collapse: separate;
+    border-spacing: 0;
+    align-self: center;
+    width: 480px;
+    height: 38px;
+    border: 1px solid hsla(0, 0%, 36%, 1);
+    border-radius: 0px 0px 10px 10px;
+    background-color: hsla(223, 100%, 50%, 0.15);
+    font-weight: 600;
+    font-size: small;
+}
+
+.start,#end {
+    height: 38px;
+    border-bottom: 1px solid hsla(0, 0%, 36%, 1);;
+}
+
+.end0 {
+    height: 38px;
+    border-left: 1px solid hsla(0, 0%, 36%, 1);
+}
+.end1 {
+    height: 38px;
+    border-left: 1px solid hsla(0, 0%, 36%, 1);
+    background-color: white;
+    text-align: center;
+}
+
+.condi {
+    background-color: yellow;
+    border-radius: 0px 0px 0px 10px;
+    text-align: center;
+}
+
+.rec {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.box-y {
+    background-color: yellow;
+    margin: 0px;
+    height: 15px;
+    width: 15px;
+    border: 1px solid black;
+}
+
+.fe-subject {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+.fe-title {
+    display: flex;
+    justify-content: start;
+}
+
+.fe-head {
+    border-collapse: separate;
+    border-spacing: 0;
+    align-self: center;
+    width: 100%;
+    height: 38px;
+    border-top: 1px solid hsla(0, 0%, 36%, 1);
+    border-left: 1px solid hsla(0, 0%, 36%, 1);
+    border-right: 1px solid hsla(0, 0%, 36%, 1);
+    border-radius: 10px 10px 10px 10px;
+    background-color: hsla(223, 100%, 50%, 0.15);
+    font-weight: 600;
+}
+
+.str-fe {
+    border-left: 1px solid hsla(0, 0%, 36%, 1);
+    border-bottom: 1px solid hsla(0, 0%, 36%, 1);
+    height: 38px;
+}
+
+.fe-sub1 {
+    border-left: 1px solid hsla(0, 0%, 36%, 1);
+    border-bottom: 1px solid hsla(0, 0%, 36%, 1);
+    background-color: #FFF;
+    text-align: center;
+    height: 38px;
+}
+
+.fe-subh {
+    border-left: 1px solid hsla(0, 0%, 36%, 1);
+    border-bottom: 1px solid hsla(0, 0%, 36%, 1);
+    background-color: #FFF;
+    text-align: center;
+    height: 38px;
+    font-weight: 200;
+}
+
+.fe-end {
+    border-left: 1px solid hsla(0, 0%, 36%, 1);
+    border-bottom: 1px solid hsla(0, 0%, 36%, 1);
+    background-color: #FFF;
+    text-align: center;
+    height: 38px;
+    font-weight: 200;
+}

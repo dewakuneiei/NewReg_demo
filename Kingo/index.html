@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project?</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-left.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/printer.css' rel='stylesheet'>
+</head>
+<header>
+    <nav>
+      <div class="logo">
+        <img src="https://www.up.ac.th/en/images/logo.png" alt="Logo" height="72px" onclick="GoHome()">
+      </div>
+      <ul class="navbar">
+        <li><a href="#">คู่มือ</a></li>
+        <li><a href="#">ติดต่อ</a></li>
+        <li class="dropdown">
+          <a href="#">ข้อความส่วนตัว</a>
+          <div class="dropdown-content">
+            <a href="#">A link</a>
+            <a href="#">B link</a>
+          </div>
+        </li>
+        <li style="margin-left: 46px;"><a href="#">การแจ้งเตือน</a></li>
+        <li class="dropdown">
+          <a href="#">บัญชีผู้ใช้</a>
+          <div class="dropdown-content">
+            <button>ออกจากระบบ</button>
+          </div>
+        </li>
+      </ul>
+    </nav>
+</header>
+<body>
+    <div class="box-container">
+        <div class="nav-box">
+            <a href="../Dewa/index.html"><i class="gg-chevron-left"></i></a>
+        </div>
+        <div class="title-box">ตรวจสอบโครงสร้างหลักสูตร (UP23)</div>
+        <div class="info-student">
+            <ol style="list-style:none;">
+                <li><b>รหัสนิสิต : </b>77777777</li>
+                <li><b>ชื่อ-สกุล : </b>นายไอจี อินสตราแกรม</li>
+                <li><b>ข้อมูลหลักสูตร : </b>210706165 หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมซอฟต์แวร์ 2565</li>
+                <li><b>ข้อมูลสถานะนิสิต : </b>10 กำลังศึกษา</li>
+                <li><b>ข้อมูลคณะ (หน่วยงานหลัก) : </b>02 คณะเทคโนโลยีสารสนเทศและการสื่อสาร</li>
+                <li><b>ข้อมูลระดับการศึกษา : </b>ปริญญาตรี ทวิภาค ปกติ</li>
+            </ol>
+        </div>
+        <div class="label-select">
+            <p class="l0">โครงสร้างหลักสูตร</p>
+        </div>
+        <div class="select-cstruc">
+            <select name="cstruc" id="">
+                <option value="1">&nbsp;210706165 หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมซอฟต์แวร์ 2565</option>
+                <option value="2">&nbsp;111111111 หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมซอฟต์แวร์ 2665</option>
+                <option value="3">&nbsp;222222222 หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมซอฟต์แวร์ 2765</option>
+                <option value="4">&nbsp;333333333 หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมซอฟต์แวร์ 2865</option>
+                <option value="4">&nbsp;more...</option>
+            </select>
+            <div class="ic-print">
+                <i class="gg-printer"></i>
+            </div>
+        </div>
+        <div class="test-eng" style="margin-top: 4em;">
+            <table style="width: 100%;border: 1px solid rgba(154, 153, 153, 0.78);border-radius: 10px;height: 41px;">
+                <tr>
+                    <td style="width: 80%;font-weight: bold;">&nbsp;การทดสอบวัดความรู้ภาษาอังกฤษ ป.ตรี เพื่อประกอบการสำเร็จการศึกษา (โปรแกรมสำเร็จรูป) (จำนวนสอบ 4 ครั้ง)</td>
+                    <td style="width: 20%;border-left: 1px solid rgba(154, 153, 153, 0.78);color: rgb(0, 184, 0);font-weight: bold; text-align: center;">PASS</td>
+                </tr>
+            </table>
+        </div>
+        <div class="label-ovall">
+          <p class="l1">ตารางข้อมูลโดยรวมของนักศึกษา</p>
+        </div>
+        <div class="ovall-info">
+            <table class="oi0">
+                <tr>
+                  <td style="width: 80%;">&nbsp;ผลการตรวจสอบ</td>
+                  <td class="end0" style="width: 20%;color: rgb(255, 0, 0);text-align: center;">FAIL</td>
+                </tr>
+            </table>
+            <table class="oi1">
+                <tr>
+                  <td class="start" style="width: 80%;">&nbsp;หน่วยกิต</td>
+                  <td class="end0" id="end" style="width: 20%;color: rgb(255, 0, 0);text-align: center;">FAIL</td>
+                </tr>
+               <br>
+            </table>
+            <table class="oi2">
+                <tr>
+                  <td class="condi" style="width: 25%;">หน่วยกิตขั้นต่ำ 120</td>
+                  <td class="end1" style="width: 25%;">หน่วยกิตที่ลง 62</td>
+                  <td class="end1" style="width: 25%;">หน่วยกิตที่ผ่าน 40</td>
+                  <td class="end1" style="width: 25%;color: rgb(255, 0, 0);text-align: center;border-radius: 0px 0px 10px 0px;">หน่วยกิจที่รอ 20</td>
+                </tr>
+            </table>
+            <table class="oi1">
+                <tr>
+                  <td class="start" style="width: 80%;">&nbsp;ปีการศึกษา</td>
+                  <td class="end0" id="end" style="width: 20%;color: #008F0E;text-align: center;">PASS</td>
+                </tr>
+                <br>
+            </table>
+            <table class="oi2">
+                <tr>
+                  <td class="condi" style="width: 33.33%;">สูงสุดไม่เกิน 8 ปี</td>
+                  <td class="end1" style="width: 33.33%;">ปีการศึกษาปกติ 4</td>
+                  <td class="end1" style="width: 33.33%;text-align: center;border-radius: 0px 0px 10px 0px;">ชั้นปีที่ 2</td>
+                </tr>
+            </table>
+            <table class="oi1">
+                <tr>
+                  <td class="start" style="width: 80%;">&nbsp;GPA</td>
+                  <td class="end0" id="end" style="width: 20%;color: #008F0E;text-align: center;">PASS</td>
+                </tr>
+                <br>
+            </table>
+            <table class="oi2">
+                <tr>
+                  <td class="condi" style="width: 50%;">GPA ขั้นต่ำ 2.00</td>
+                  <td class="end1" style="width: 50%;text-align: center;border-radius: 0px 0px 10px 0px;">3.96</td>
+                </tr>
+            </table>
+            <div class="rec">
+                <ol style="list-style:none;">
+                  <li style="font-weight: 600;font-size: medium;margin-bottom: 1em;">หมายเหตุ*</li>
+                  <li style="width: 100%;display: flex;flex-direction: row;align-items: center;">
+                    <p class="box-y" style="width: 30%;margin-right: 1em;"></p>
+                    <p style="width: 80%;margin: 0px;">เงื่อนไข</p>
+                  </li>
+                  <li style="width: 100%;display: flex;flex-direction: row;align-items: center;">
+                    <p style="width: 20%;margin-right: 1em;margin: 0px;margin-right: 20px;color: #008F0E;font-weight: 600;">PASS</p>
+                    <p style="width: 80%;margin: 0px;">ผ่านเงื่อนไข</p>
+                  </li>
+                  <li style="width: 100%;display: flex;flex-direction: row;align-items: center;">
+                    <p style="width: 20%;margin-right: 1em;margin: 0px;margin-right: 20px;color:  rgb(255, 0, 0);font-weight: 600;">FAIL</p>
+                    <p style="width: 80%;margin: 0px;">ไม่ผ่านเงื่อนไข</p>
+                  </li>
+                </ol>
+            </div>
+        </div>
+        <div class="fe-subject">
+          <div class="fe-title">
+            <p style="font-size: large;font-weight: 600;">ตารางรายละเอียดรายวิชาของนักศึกษา</p>
+          </div>
+          <div class="fe-stitle">
+            <p style="font-size: medium;font-weight: 600;margin: 0px;">1.หมวดวิชาศึกษาทั่วไป</p>
+          </div>
+          <table id="1" class="fe-head">
+                <tr id="headfe">
+                  <th class="str-fe" style="width: 7%;border-left: 0px;">ลำดับที่</th>
+                  <th class="str-fe" style="width: 43%;text-align: center;">กลุ่มรายวิชา</th>
+                  <th class="str-fe" style="width: 10%;text-align: center;"><strong>หน่วยกิต</strong></th>
+                  <th class="str-fe" style="width: 4.5%;text-align: center;"><strong>CA</strong></th>
+                  <th class="str-fe" style="width: 4.5%;text-align: center;"><strong>PT</strong></th>
+                  <th class="str-fe" style="width: 4.5%;text-align: center;"><strong>AVG</strong></th>
+                  <th class="str-fe" style="width: 4.5%;text-align: center;"><strong>MAX</strong></th>
+                  <th class="str-fe" style="text-align: center;width: 5%;">1</th>
+                  <th class="str-fe" style="text-align: center;width: 5%;">2</th>
+                  <th class="str-fe" style="text-align: center;width: 5%;">3</th>
+                  <th class="str-fe" style="text-align: center;width: 7%;">4</th>
+                </tr>
+                <tr id="subhfe">
+                  <td class="fe-sub1" style="border-left: 0px;">1.1</td>
+                  <td class="fe-sub1" style="text-align: start;">&nbsp;กลุ่มวิชาภาษา</td>
+                  <td class="fe-sub1" style="color: red;">FAIL</td>
+                  <td class="fe-sub1" colspan="3">MIN 12 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" colspan="2">PASS 9 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1">GPA 4.00</td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;001101[3]	Thai Language in Daily Life</td>
+                  <td class="fe-subh">2 (2-0-4)</td>
+                  <td class="fe-subh">2</td>
+                  <td class="fe-subh">8.0</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">A 1/65</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;001102[3]	Thai for Academic Purposes</td>
+                  <td class="fe-subh">1 (0-2-1)</td>
+                  <td class="fe-subh">1</td>
+                  <td class="fe-subh">4.0</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">A 2/65</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;001103[6]	English for Daily Life</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">3</td>
+                  <td class="fe-subh">12.0</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">A 1/65</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;001104[1]	English for Communication</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">3</td>
+                  <td class="fe-subh">12.0</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">A 2/65</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;001205[1]	English for Academic and Professional Communication</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">1/66</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="subhfe">
+                  <td class="fe-sub1" style="border-left: 0px;">1.2</td>
+                  <td class="fe-sub1" style="text-align: start;">&nbsp;กลุ่มวิชาเทคโนโลยีและการสื่อสารยุคดิจิทัล</td>
+                  <td class="fe-sub1" style="color: #008F0E;">PASS</td>
+                  <td class="fe-sub1" colspan="3">MIN 3 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" colspan="2">PASS 3 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1">GPA 4.00</td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;002101[1]	Technology Usage for Digital life</td>
+                  <td class="fe-subh">1 (0-2-1)</td>
+                  <td class="fe-subh">1</td>
+                  <td class="fe-subh">4.0</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">A 1/65</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;002102[1]	Digital Intelligence Quotient</td>
+                  <td class="fe-subh">2 (1-2-3)</td>
+                  <td class="fe-subh">2</td>
+                  <td class="fe-subh">8.0</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">A 2/65</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="subhfe">
+                  <td class="fe-sub1" style="border-left: 0px;">1.3</td>
+                  <td class="fe-sub1" style="text-align: start;">&nbsp;กลุ่มวิชาทักษะชีวิต</td>
+                  <td class="fe-sub1" style="color: #ff0000;">FAIL</td>
+                  <td class="fe-sub1" colspan="3">MIN 15 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" colspan="2">PASS 6 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1">GPA 4.00</td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;003101[1]	Aesthetics for Life Management</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">3</td>
+                  <td class="fe-subh">12.0</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">A 1/65</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;003102[1]	Skills Development and Lifelong Learning</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">3</td>
+                  <td class="fe-subh">12.0</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">A 2/65</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;003203[1]	Collaborative Learning for Society Creation</td>
+                  <td class="fe-subh">2 (0-4-2)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">1/66</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;003204[1]	Health, Environment and Community Management</td>
+                  <td class="fe-subh">1 (0-2-1)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;003305[1]	Design Thinking Process for Digital Age Entrepreneurs</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="endfe">
+                  <td class="fe-end" style="border-left: 0px;border-radius:0px 0px 0px 10px ;"></td>
+                  <td class="fe-end" style="text-align: start;"> &nbsp;003306[1]	Integration for Professional Innovation</td>
+                  <td class="fe-end">3 (0-6-3)</td>
+                  <td class="fe-end">-</td>
+                  <td class="fe-end">-</td>
+                  <td class="fe-end">-</td>
+                  <td class="fe-end">-</td>
+                  <td class="fe-end"></td>
+                  <td class="fe-end"></td>
+                  <td class="fe-end"></td>
+                  <td class="fe-end" style="border-radius:0px 0px 10px 0px ;"></td>
+                </tr>
+          </table>
+          <br>
+          <div class="fe-stitle">
+            <p style="font-size: medium;font-weight: 600;margin: 0px;">2.หมวดวิชาเฉพาะ</p>
+          </div>
+          <table id="2" class="fe-head">
+                <tr id="headfe">
+                  <th class="str-fe" style="width: 7%;border-left: 0px;">ลำดับที่</th>
+                  <th class="str-fe" style="width: 43%;text-align: center;">กลุ่มรายวิชา</th>
+                  <th class="str-fe" style="width: 10%;text-align: center;"><strong>หน่วยกิต</strong></th>
+                  <th class="str-fe" style="width: 4.5%;text-align: center;"><strong>CA</strong></th>
+                  <th class="str-fe" style="width: 4.5%;text-align: center;"><strong>PT</strong></th>
+                  <th class="str-fe" style="width: 4.5%;text-align: center;"><strong>AVG</strong></th>
+                  <th class="str-fe" style="width: 4.5%;text-align: center;"><strong>MAX</strong></th>
+                  <th class="str-fe" style="text-align: center;width: 5%;">1</th>
+                  <th class="str-fe" style="text-align: center;width: 5%;">2</th>
+                  <th class="str-fe" style="text-align: center;width: 5%;">3</th>
+                  <th class="str-fe" style="text-align: center;width: 7%;">4</th>
+                </tr>
+                <tr id="subhfe">
+                  <td class="fe-sub1" style="border-left: 0px;">2.1</td>
+                  <td class="fe-sub1" style="text-align: start;">&nbsp;วิชาแกน</td>
+                  <td class="fe-sub1" style="color: red;">FAIL</td>
+                  <td class="fe-sub1" colspan="3">MIN 12 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" colspan="2">PASS 6 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1">GPA 4.00</td>
+                </tr>
+                <tr id="subhfe">
+                  <td class="fe-sub1" style="border-left: 0px;">2.1.1</td>
+                  <td class="fe-sub1" style="text-align: start;">&nbsp;กลุ่มพีชคณิตเชิงเส้น</td>
+                  <td class="fe-sub1" style="color: red;">FAIL</td>
+                  <td class="fe-sub1" colspan="3">MIN 3 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" colspan="2">PASS - CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1">GPA 0.00</td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;241324[2]	Linear Algebra I</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">1/66</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="subhfe">
+                  <td class="fe-sub1" style="border-left: 0px;">2.1.2</td>
+                  <td class="fe-sub1" style="text-align: start;">&nbsp;กลุ่มคณิตศาสตร์ดิสครีต</td>
+                  <td class="fe-sub1" style="color: #008F0E;">PASS</td>
+                  <td class="fe-sub1" colspan="3">MIN 3 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" colspan="2">PASS 3 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1">GPA 4.00</td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;241334[2]	Discrete Mathematics</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">3</td>
+                  <td class="fe-subh">12.0</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">A 2/65</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="subhfe">
+                  <td class="fe-sub1" style="border-left: 0px;">2.1.3</td>
+                  <td class="fe-sub1" style="text-align: start;">&nbsp;กลุ่มสถิติและวิธีการเชิงประสบการณ์สำหรับคอมพิวเตอร์</td>
+                  <td class="fe-sub1" style="color: red;">FAIL</td>
+                  <td class="fe-sub1" colspan="3">MIN 6 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" colspan="2">PASS 3 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1">GPA 4.00</td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;241151[2]	Calculus I</td>
+                  <td class="fe-subh">3 (3-0-6)</td>
+                  <td class="fe-subh">3</td>
+                  <td class="fe-subh">12.0</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">A 1/65</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;247105[1]	Probability and Statistics</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">1/66</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="subhfe">
+                  <td class="fe-sub1" style="border-left: 0px;">2.2</td>
+                  <td class="fe-sub1" style="text-align: start;">&nbsp;วิชาเฉพาะด้าน</td>
+                  <td class="fe-sub1" style="color: #ff0000;">FAIL</td>
+                  <td class="fe-sub1" colspan="3">MIN 72 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" colspan="2">PASS 12 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1">GPA 4.00</td>
+                </tr>
+                <tr id="subhfe">
+                  <td class="fe-sub1" style="border-left: 0px;">2.2.1</td>
+                  <td class="fe-sub1" style="text-align: start;">&nbsp;กลุ่มประเด็นด้านองค์การและระบบสารสนเทศ</td>
+                  <td class="fe-sub1" style="color: #ff0000;">FAIL</td>
+                  <td class="fe-sub1" colspan="3">MIN 15 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" colspan="2">PASS 3 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1">GPA 4.00</td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;122110[1]	Introduction to Business</td>
+                  <td class="fe-subh">3 (3-0-6)</td>
+                  <td class="fe-subh">3</td>
+                  <td class="fe-subh">12.0</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">A 1/65</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227271[1]	Software Process</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">1/66</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227326[1]	Research Methodology</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227381[1]	Software Project Management</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227422[2]	Software Engineering Project</td>
+                  <td class="fe-subh">3 (0-6-3)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="subhfe">
+                  <td class="fe-sub1" style="border-left: 0px;">2.2.2</td>
+                  <td class="fe-sub1" style="text-align: start;">&nbsp;กลุ่มเทคโนโลยีเพื่องานประยุกต์</td>
+                  <td class="fe-sub1" style="color: #ff0000;">FAIL</td>
+                  <td class="fe-sub1" colspan="3">MIN 9 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" colspan="2">PASS - CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1">GPA 0.00</td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;146132[2]	Listening and Speaking in Daily Life</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227202[2]	Fundamental of Database System</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">1/66</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227332[3]	Fundamental of Artificial Intelligence</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="subhfe">
+                  <td class="fe-sub1" style="border-left: 0px;">2.2.3</td>
+                  <td class="fe-sub1" style="text-align: start;">&nbsp;กลุ่มเทคโนโลยีและวิธีการทางซอฟต์แวร์</td>
+                  <td class="fe-sub1" style="color: #ff0000;">FAIL</td>
+                  <td class="fe-sub1" colspan="3">MIN 24 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" colspan="2">PASS 9 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1">GPA 4.00</td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227141[1]	Software Requirements</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">3</td>
+                  <td class="fe-subh">12.0</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">A 2/65</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227151[1]	User Experience and User Interface Design</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">3</td>
+                  <td class="fe-subh">12.0</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">A 1/65</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227201[2]	Principles of Object-Oriented Programming</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">1/66</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227211[4]	Concepts of Algorithms</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227221[4]	Front-End Software Development</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">3</td>
+                  <td class="fe-subh">12.0</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">A 2/65</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227223[1]	Back-End Software Development</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227302[1]	Software Development Operation</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227361[2]	Software Testing</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="subhfe">
+                  <td class="fe-sub1" style="border-left: 0px;">2.2.4</td>
+                  <td class="fe-sub1" style="text-align: start;">&nbsp;กลุ่มโครงสร้างพื้นฐานของระบบ</td>
+                  <td class="fe-sub1" style="color: #ff0000;">FAIL</td>
+                  <td class="fe-sub1" colspan="3">MIN 6 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" colspan="2">PASS - CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1">GPA 0.00</td>
+                </tr>
+                <tr id="subhfe">
+                  <td class="fe-sub1" style="border-left: 0px;">2.2.5</td>
+                  <td class="fe-sub1" style="text-align: start;">&nbsp;กลุ่มฮาร์ดแวร์และสถาปัตยกรรมคอมพิวเตอร์</td>
+                  <td class="fe-sub1" style="color: #ff0000;">FAIL</td>
+                  <td class="fe-sub1" colspan="3">MIN 3 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" colspan="2">PASS - CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1">GPA 0.00</td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227203[2]	Computer Organization and Operating Systems</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="subhfe">
+                  <td class="fe-sub1" style="border-left: 0px;">2.3</td>
+                  <td class="fe-sub1" style="text-align: start;">&nbsp;วิชาเอกเลือก ให้นิสิตเลือกกลุ่มใดกลุ่มหนึ่งไม่เกิน 2 กลุ่ม</td>
+                  <td class="fe-sub1" style="color: #ff0000;">FAIL</td>
+                  <td class="fe-sub1" colspan="3">MIN 9 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" colspan="2">PASS - CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1">GPA 0.00</td>
+                </tr>
+                <tr id="subhfe">
+                  <td class="fe-sub1" style="border-left: 0px;">2.3.1</td>
+                  <td class="fe-sub1" style="text-align: start;">&nbsp;กลุ่มเทคโนโลยีด้านการปรับปรุงกระบวนการซอฟต์แวร์</td>
+                  <td class="fe-sub1" style="color: #008F0E;">PASS</td>
+                  <td class="fe-sub1" colspan="3">MIN - CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" colspan="2">PASS - CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1">GPA 0.00</td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227362[1]	Advance Software Testing</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227372[4]	Software Quality Assurance</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227375[2]	Data Analysis and Visualization</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227377[1]	Data Engineering and data mining</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227482[3]	Current Topics in Software Process Enhancement</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="subhfe">
+                  <td class="fe-sub1" style="border-left: 0px;">2.3.2</td>
+                  <td class="fe-sub1" style="text-align: start;">&nbsp;กลุ่มเทคโนโลยีทางด้านการพัฒนาซอฟต์แวร์</td>
+                  <td class="fe-sub1" style="color: #008F0E;">PASS</td>
+                  <td class="fe-sub1" colspan="3">MIN - CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" colspan="2">PASS - CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1">GPA 0.00</td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;225482[2]	Decentralized Application Development</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227321[3]	Game Programming</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227324[2]	Mobile Application Development for Software Engineering</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227325[1]	Web Application Development for Software Engineering</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227483[2]	Current Topics in Software Development</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="subhfe">
+                  <td class="fe-sub1" style="border-left: 0px;">2.3.3</td>
+                  <td class="fe-sub1" style="text-align: start;">&nbsp;กลุ่มเสริมทักษะการทำงาน กรณีเลือกเรียนรายวิชา 227421 การศึกษาเชิงบูรณาการกับการทำงาน 1 นิสิตต้องลงเรียนรายวิชา 227426 การศึกษาเชิงบูรณาการกับการทำงาน 2	</td>
+                  <td class="fe-sub1" style="color: #008F0E;">PASS</td>
+                  <td class="fe-sub1" colspan="3">MIN - CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" colspan="2">PASS - CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1">GPA 0.00</td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227421[1]	Work Integrated Learning I</td>
+                  <td class="fe-subh">6 (0-18-9)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="subhfe">
+                  <td class="fe-sub1" style="border-left: 0px;">2.4</td>
+                  <td class="fe-sub1" style="text-align: start;">&nbsp;ประสบการณ์ภาคสนาม (เฉพาะนิสิตที่ไม่ได้เลือกเรียนกลุ่มวิชาเลือกเสริมทักษะการทำงาน เลือกเรียนเพียง 1รายวิชา กรณีเลือกเรียนรายวิชา 227421 การศึกษาเชิงบูรณาการกับการทำงาน 1 นิสิตต้องลงเรียนรายวิชา 227426 การศึกษาเชิงบูรณาการกับการทำงาน 2)</td>
+                  <td class="fe-sub1" style="color: red;">FAIL</td>
+                  <td class="fe-sub1" colspan="3">MIN 6 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" colspan="2">PASS - CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1">GPA 0.00</td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227423[3]	Professional Training</td>
+                  <td class="fe-subh">6 (0-18-9)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227424[2]	Co-operative Education</td>
+                  <td class="fe-subh">6 (0-18-9)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227425[2]	Independent Study</td>
+                  <td class="fe-subh">6 (0-18-9)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="endfe">
+                  <td class="fe-subh" style="border-left: 0px;border-radius:0px 0px 0px 10px ;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227426[2]	Work Integrated Learning II</td>
+                  <td class="fe-subh">6 (0-18-9)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh" style="border-radius:0px 0px 10px 0px ;"></td>
+                </tr>
+          </table>
+          <br>
+          <div class="fe-stitle">
+            <p style="font-size: medium;font-weight: 600;margin: 0px;">3.หมวดวิชาเลือกเสรี</p>
+          </div>
+          <table id="3" class="fe-head">
+                <tr id="headfe">
+                  <th class="str-fe" style="width: 7%;border-left: 0px;">ลำดับที่</th>
+                  <th class="str-fe" style="width: 43%;text-align: center;">กลุ่มรายวิชา</th>
+                  <th class="str-fe" style="width: 10%;text-align: center;"><strong>หน่วยกิต</strong></th>
+                  <th class="str-fe" style="width: 4.5%;text-align: center;"><strong>CA</strong></th>
+                  <th class="str-fe" style="width: 4.5%;text-align: center;"><strong>PT</strong></th>
+                  <th class="str-fe" style="width: 4.5%;text-align: center;"><strong>AVG</strong></th>
+                  <th class="str-fe" style="width: 4.5%;text-align: center;"><strong>MAX</strong></th>
+                  <th class="str-fe" style="text-align: center;width: 5%;">1</th>
+                  <th class="str-fe" style="text-align: center;width: 5%;">2</th>
+                  <th class="str-fe" style="text-align: center;width: 5%;">3</th>
+                  <th class="str-fe" style="text-align: center;width: 7%;">4</th>
+                </tr>
+                <tr id="subhfe">
+                  <td class="fe-sub1" style="border-left: 0px;">3.1</td>
+                  <td class="fe-sub1" style="text-align: start;">&nbsp;กลุ่มวิชาเลือกเสรี</td>
+                  <td class="fe-sub1" style="color: #008F0E;">PASS</td>
+                  <td class="fe-sub1" colspan="3">MIN 6 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" colspan="2">PASS 6 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1">GPA 3.75</td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227101[3]	Fundamental of Problem Solving and Programming</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">3</td>
+                  <td class="fe-subh">10.5</td>
+                  <td class="fe-subh">3.50</td>
+                  <td class="fe-subh">3.50</td>
+                  <td class="fe-subh">B+ 1/65</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;border-radius:0px 0px 0px 10px ;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227102[3]	Data Structure</td>
+                  <td class="fe-subh">3 (2-2-5)</td>
+                  <td class="fe-subh">3</td>
+                  <td class="fe-subh">12.0</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">4.00</td>
+                  <td class="fe-subh">A 2/65</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh" style="border-radius:0px 0px 10px 0px ;"></td>
+                </tr>
+          </table>
+          <br>
+          <div class="fe-stitle">
+            <p style="font-size: medium;font-weight: 600;margin: 0px;">4.รายวิชาบังคับไม่นับหน่วยกิต</p>
+          </div>
+          <table id="4" class="fe-head">
+                <tr id="headfe">
+                  <th class="str-fe" style="width: 7%;border-left: 0px;">ลำดับที่</th>
+                  <th class="str-fe" style="width: 43%;text-align: center;">กลุ่มรายวิชา</th>
+                  <th class="str-fe" style="width: 10%;text-align: center;"><strong>หน่วยกิต</strong></th>
+                  <th class="str-fe" style="width: 4.5%;text-align: center;"><strong>CA</strong></th>
+                  <th class="str-fe" style="width: 4.5%;text-align: center;"><strong>PT</strong></th>
+                  <th class="str-fe" style="width: 4.5%;text-align: center;"><strong>AVG</strong></th>
+                  <th class="str-fe" style="width: 4.5%;text-align: center;"><strong>MAX</strong></th>
+                  <th class="str-fe" style="text-align: center;width: 5%;">1</th>
+                  <th class="str-fe" style="text-align: center;width: 5%;">2</th>
+                  <th class="str-fe" style="text-align: center;width: 5%;">3</th>
+                  <th class="str-fe" style="text-align: center;width: 7%;">4</th>
+                </tr>
+                <tr id="subhfe">
+                  <td class="fe-sub1" style="border-left: 0px;">4.1</td>
+                  <td class="fe-sub1" style="text-align: start;">&nbsp;กลุ่มรายวิชาบังคับไม่นับหน่วยกิต</td>
+                  <td class="fe-sub1" style="color: red">FAIL</td>
+                  <td class="fe-sub1" colspan="3">MIN 1 CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" colspan="2">PASS - CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1">GPA 0.00</td>
+                </tr>
+                <tr id="infofe">
+                  <td class="fe-subh" style="border-left: 0px;border-radius:0px 0px 0px 10px ;"></td>
+                  <td class="fe-subh" style="text-align: start;"> &nbsp;227322[2]	Preparation for Software Engineering Professional Experience</td>
+                  <td class="fe-subh">1 (0-2-1)</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh">-</td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh"></td>
+                  <td class="fe-subh" style="border-radius:0px 0px 10px 0px ;"></td>
+                </tr>
+          </table>
+          <br>
+          <div class="fe-stitle">
+            <p style="font-size: medium;font-weight: 600;margin: 0px;">5.รายวิชานอกโครงสร้าง</p>
+          </div>
+          <table id="5" class="fe-head">
+                <tr id="headfe">
+                  <th class="str-fe" style="width: 7%;border-left: 0px;">ลำดับที่</th>
+                  <th class="str-fe" style="width: 43%;text-align: center;">กลุ่มรายวิชา</th>
+                  <th class="str-fe" style="width: 10%;text-align: center;"><strong>หน่วยกิต</strong></th>
+                  <th class="str-fe" style="width: 4.5%;text-align: center;"><strong>CA</strong></th>
+                  <th class="str-fe" style="width: 4.5%;text-align: center;"><strong>PT</strong></th>
+                  <th class="str-fe" style="width: 4.5%;text-align: center;"><strong>AVG</strong></th>
+                  <th class="str-fe" style="width: 4.5%;text-align: center;"><strong>MAX</strong></th>
+                  <th class="str-fe" style="text-align: center;width: 5%;">1</th>
+                  <th class="str-fe" style="text-align: center;width: 5%;">2</th>
+                  <th class="str-fe" style="text-align: center;width: 5%;">3</th>
+                  <th class="str-fe" style="text-align: center;width: 7%;">4</th>
+                </tr>
+                <tr id="subhfe">
+                  <td class="fe-sub1" style="border-left: 0px;border-radius:0px 0px 0px 10px ;">5.1</td>
+                  <td class="fe-sub1" style="text-align: start;">&nbsp;กลุ่มรายวิชานอกโครงสร้าง</td>
+                  <td class="fe-sub1" style="color: #008F0E">PASS</td>
+                  <td class="fe-sub1" colspan="3">MIN - CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" colspan="2">PASS - CR</td>
+                  <td class="fe-sub1"></td>
+                  <td class="fe-sub1" style="border-radius:0px 0px 10px 0px ;">GPA 0.00</td>
+                </tr>
+          </table>          
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
