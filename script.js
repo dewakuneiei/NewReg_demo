@@ -17,7 +17,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 const GoHome = ()=> {
     // Replace 'https://example.com' with the URL you want to open
-    const url = 'https://example.com';
+    const url = 'https://reg.up.ac.th/';
 
     // Open the website link in a new tab or window
     window.open(url, '_blank');
